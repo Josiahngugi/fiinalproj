@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>4_stars</title>
-  <script src="js/master.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/master.css">
-    <script src="js/jquery-1.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+  <script src="js/master.js"></script>
 </head>
 
 <body>
@@ -20,10 +21,8 @@
 </button>
 
     <div class="collapse navbar-collapse">
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn bg-danger my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <h4>Developer</h4>&nbsp;&nbsp;
+      <button class="btn bg-danger my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#exampleModalCenter">log In</button>
       <ul class="navbar-nav ml-auto px-4 display-5 ">
         <li class="nav-item">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -42,7 +41,8 @@
           <a class="nav-link" href="#contact">Contacts</a>
         </li>
       </ul>
-      <button class="btn bg-danger my-2 my-sm-0" type="submit">Post a job</button>
+      <h4>Client</h4>&nbsp;&nbsp;
+      <button class="btn bg-danger my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Post a job</button>
     </div>
   </nav>
   <!-- header image starts here -->
@@ -54,7 +54,50 @@
   </div>
   <!-- header image ends her -->
   <div class="container-fluid">
+    <div class="row">
+    <!-- handle carefully this are modals
+    Copy -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Online Dev. forums</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="text-center text-success"><b>Please enter you job details here</b></h5>
+            <form class="text-center" action="index.html" method="post">
+              <div class="form-group">
+                <label for=""><b>Name:</b>
+                <input type="text" name="" value="" class="form-control"></label>
+              </div>
+              <div class="form-group">
+                <label for=""><b>Email:</b>
+                <input type="email" name="" value="" class="form-control"></label>
+              </div>
+              <div class="form-group">
+                <label for=""><b>Job description:</b></label><br>
+                <textarea name="name" rows="3" ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+
+
+ <!-- it ends here -->
+</div>
     <div class="row justify-content-center bg-success py-5" id="works">
       <h1 id="works">How it works</h1>
     </div>
@@ -273,59 +316,11 @@
       <div class="row justify-content-center bg-success py-5">
         <h1 id="contact">Contacts</h1>
       </div>
-      <div class="row justify-content-center py-1 ">
-        <!-- this here is navbar ends -->
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-top" src="img/mor.png" alt="moringaschool" width="190" height="60px">
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-top"src="img/github.png" alt="safaricom" width=130px heigth=190px>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-top"src="img/im.png" alt="I&M" width=120px heigth=120px>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center">
-            <img class="card-top img" src="img/cyt.png" alt="Cytonn" width=150px heigth=150px>
-          </div>
-        </div>
-      </div>
 
-      <div class="row py-5">
-          <div class="col-xm-12 col-sm-12 col-md-4">
-            <div class="card text-center">
-              <h4>subscribe</h4>
-              <form class="" action="index.html" method="post">
-                <input type="text" name="" value="" placeholder="someone@name.com"><br><br>
-                <input type="submit" name="submit" value="submit">
-              </form>
-            </div>
-          </div>
+      <!-- this the modals handlle carefully please -->
+      <!-- Button trigger modal -->
 
-          <div class="col-md-4">
-            <div class="card text-center">
-              <h4>contacts</h4>
-            </div>
-          </div>
-
-          <div class="col-xm-12 col-sm-12 col-md-4">
-            <div class="card text-center">
-            <h4>Quick Links<h4>
-              <ul>
-                <li><a href="#">How it works</li>
-                <li><a href="#">Services</li>
-                <li><a href="#">Developers</li>
-                <li><a href="#">contacts</li>
-              </ul>
-            </div>
-          </div>
-      </div>
+  <!-- Button trigger modal -->
   </div>
 </body>
 
