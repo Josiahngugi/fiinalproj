@@ -27,6 +27,41 @@
 html {
     font-size: 15px;
 }
+.content-header{
+font-family: 'Oleo Script', cursive;
+color:#fcc500;
+font-size: 45px;
+}
+
+.section-content{
+text-align: center;
+
+}
+#contacts{
+
+font-family: 'Teko', sans-serif;
+padding-top: 60px;
+width: 100%;
+width: 100vw;
+height: 550px;
+}
+
+
+.form-line{
+border-right: 1px solid #B29999;
+}
+
+textarea.form-control {
+  height: 135px;
+
+}
+
+.submit{
+font-size: 1.1em;
+float: right;
+width: 150px;
+color: #fff;
+}
 
 .card{
   border: none;
